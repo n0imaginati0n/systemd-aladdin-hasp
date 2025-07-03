@@ -2,9 +2,9 @@
 
 systemd service units for SafeNet Sentinel and Aladdin HASP keys drivers
 
-This project about replacement of the old-styled init.d scripts to the systemd
-service units with similar functionality. Tu se you need to install haspd package
-first. then you can remove or copy in the safe place init.d scripts:
+Replacement of the old-styled init.d scripts to the systemd service units
+with a similar functionality. You need to install haspd package first. Then
+you can remove or copy in the safe place init.d scripts:
 
  - /etc/init.d/haspd
  - /etc/init.d/haspd.outformat
