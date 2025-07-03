@@ -12,8 +12,8 @@ you can remove or copy in the safe place init.d scripts:
 and link given scripts to execution:
 
 ```sh
-systemctl link ./scripts/aksubd.service
-systemctl link ./scripts/hasplm.service
+systemctl link ./service/aksubd.service
+systemctl link ./service/hasplm.service
 ```
 
 enable them:
