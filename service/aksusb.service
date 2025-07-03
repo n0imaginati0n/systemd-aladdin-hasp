@@ -1,0 +1,11 @@
+[Unit]
+Description=Aksusbd Daemon
+Before=hasplm.service
+
+[Service]
+Type=forking
+ExecStart=/usr/sbin/aksusbd
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+[Unit]
+Description=Hasplm Daemon
+Requires=usbip-client.service aksusbd.service
+After=usbip-client.service aksusbd.service
+
+[Service]
+Type=forking
+ExecStart=/usr/sbin/hasplmd -s
+ExecStartPost=/bin/bash -c 'if /usr/sbin/usbkeytest --detect | grep -q aladdin; then logger "hasplm: HASP key found"; fi'
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
